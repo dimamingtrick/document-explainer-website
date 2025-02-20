@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Analyser</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="icon" type="image/x-icon" href="./assets/logo.svg">
+</head>
+
+<body class="overscroll-none flex flex-col h-screen justify-between">
+<header class="bg-[#232f48] text-white sticky top-0 rounded-b-xl">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+                <a href="./index.html" class="text-xl font-bold flex flex-row items-center text-gray-200">
+                    <img class="h-10 w-auto mr-2" src="./assets/logo.svg" alt="Logo">
+                    File Analyser
+                </a>
+            </div>
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex space-x-6">
+                <a href="./privacy.html"
+                   class="block py-2 pr-4 pl-3 text-gray-400 lg:hover:bg-transparent lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent">
+                    Privacy policy
+                </a>
+                <a href="./terms.html"
+                   class="block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white"
+                >
+                    Terms and conditions
+                </a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="focus:outline-none">
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                         stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#232f48]">
+        <a href="./privacy.html"
+           class="block px-4 py-2 text-sm py-2 pr-4 pl-3 text-gray-400 lg:hover:bg-transparent lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent">
+            Privacy policy
+        </a>
+        <a href="./terms.html"
+           class="block px-4 py-2 text-sm py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white"
+        >
+            Terms and conditions
+        </a>
+    </div>
+</header>
+
+<main class="p-8 container mx-auto max-w-7xl">
+    <h1 class="text-4xl font-bold mb-8 text-center underline">Terms and conditions</h1>
+
+    <h2 class="text-2xl font-bold mb-3">1. Introduction</h2>
+    <p class="mb-8">Welcome to File Analyser! By accessing or using our application, you agree to comply with and be
+        bound by these Terms & Conditions. Please read them carefully.</p>
+
+    <h2 class="text-2xl font-bold mb-3">2. Description of Service</h2>
+    <p class="mb-8">File Analyser provides users with the ability to upload images or files for analysis using AI-based
+        technology. The analysis results are intended for informational purposes only.</p>
+
+    <h2 class="text-2xl font-bold mb-3">3. User Responsibilities</h2>
+    <ul class="mb-8 list-disc ml-auto list-inside">
+        <li>Users must provide accurate and lawful files for analysis.</li>
+        <li>Users are responsible for the content they upload and must ensure it does not violate any applicable laws or
+            third-party rights.
+        </li>
+        <li>The application must not be used to upload content that is illegal, offensive, or infringes on privacy.</li>
+    </ul>
+
+    <h2 class="text-2xl font-bold mb-3">4. Data Usage and Privacy</h2>
+    <ul class="mb-8 list-disc ml-auto list-inside">
+        <li>We collect and process files solely for the purpose of analysis.</li>
+        <li>All files, images, photos, and text uploaded by users are stored until the user deletes their account.</li>
+        <li>We only use the files provided by users with their explicit consent.</li>
+        <li>Files and data are stored securely and used exclusively to improve the accuracy and relevance of the AI
+            analysis.
+        </li>
+        <li>Users can delete their files at any time by deleting their account or requesting file removal.</li>
+        <li>We never share user-uploaded content with third parties unless required by law or explicitly authorized by
+            the user.
+        </li>
+        <li>We adhere to applicable data protection regulations. Please refer to our Privacy Policy for more
+            information.
+        </li>
+    </ul>
+
+    <h2 class="text-2xl font-bold mb-3">5. AI Analysis Limitations</h2>
+    <ul class="mb-8 list-disc ml-auto list-inside">
+        <li>The AI analysis provided is based on patterns identified in the uploaded files and does not guarantee
+            complete accuracy.
+        </li>
+        <li>Results should not be relied upon for critical or legal decisions.</li>
+        <li>The application is not responsible for any incorrect interpretations or conclusions based on the analysis
+            results.
+        </li>
+    </ul>
+
+    <h2 class="text-2xl font-bold mb-3">6. Intellectual Property</h2>
+    <ul class="mb-8 list-disc ml-auto list-inside">
+        <li>The application and its content, including text, graphics, and algorithms, are the intellectual property of
+            the File Analyser team.
+        </li>
+        <li>Users retain ownership of the files they upload but grant us a temporary license to process them.</li>
+        <li>We do not claim ownership of user-uploaded content; however, we reserve the right to use anonymized data to
+            improve AI performance.
+        </li>
+    </ul>
+
+    <h2 class="text-2xl font-bold mb-3">7. Limitation of Liability</h2>
+    <ul class="mb-8 list-disc ml-auto list-inside">
+        <li>We are not responsible for inaccuracies in the analysis results or any decisions made based on them.</li>
+        <li>We disclaim liability for any damages arising from misuse of the application.</li>
+        <li>Users are responsible for ensuring that the files they upload comply with all legal and regulatory
+            requirements.
+        </li>
+    </ul>
+
+    <h2 class="text-2xl font-bold mb-3">8. Advertising</h2>
+    <ul class="mb-8 list-disc ml-auto list-inside">
+        <li>The application contains advertisements that may be personalized based on user data.</li>
+        <li>By using the application, you consent to the display of ads during usage.</li>
+        <li>Users can opt for an ad-free experience by subscribing to a premium plan.</li>
+    </ul>
+
+    <h2 class="text-2xl font-bold mb-3">9. Subscription and Premium Features</h2>
+    <ul class="mb-8 list-disc ml-auto list-inside">
+        <li>The application offers a subscription plan that provides access to additional features and an ad-free
+            experience.
+        </li>
+        <li>Subscription terms, including pricing and duration, are specified within the application.</li>
+        <li>Premium features may include faster processing, additional analysis options, and higher upload limits.</li>
+        <li>Users can manage or cancel their subscriptions through their account settings.</li>
+        <li>No refunds are provided for unused portions of a subscription period unless required by law.</li>
+    </ul>
+
+    <h2 class="text-2xl font-bold mb-3">10. Modifications</h2>
+    <p class="mb-8">We reserve the right to update these Terms & Conditions as needed. Changes will be communicated via
+        the application or website. Continued use of the application after changes are published constitutes acceptance
+        of the revised terms.</p>
+
+    <h2 class="text-2xl font-bold mb-3">11. Account Termination and Data Deletion</h2>
+    <ul class="mb-8 list-disc ml-auto list-inside">
+        <li>Users can delete their account at any time, resulting in the deletion of all uploaded files and associated
+            data.
+        </li>
+        <li>Account termination requests are processed within 30 days.</li>
+        <li>Once deleted, data cannot be recovered.</li>
+    </ul>
+
+    <h2 class="text-2xl font-bold mb-3">12. Contact</h2>
+    <p>If you have any questions about these Terms & Conditions, please contact us at <a
+            class="text-blue-600 visited:text-purple-600 hover:underline"
+            href="mailto:dimamingtrick@gmail.com?subject=File Analysis terms and conditions">dimamingtrick@gmail.com</a>.
+    </p>
+
+    <p>By using File Analyser, you confirm that you have read, understood, and agree to these terms.</p>
+</main>
+
+<footer class="w-full mt-auto bg-[#232f48] shadow-sm dark:bg-gray-900 rounded-t-xl flex flex-row align-center justify-between mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="p-2 md:py-6">
+        <span class="block text-sm text-white sm:text-center dark:text-gray-400">
+            <span id="current-year"></span> Dmytro Shraho. All Rights Reserved.</span>
+    </div>
+    <div class="p-2 md:py-6 block text-sm text-white sm:text-center dark:text-gray-400">
+        Contact: <a class="text-blue-300 underline visited:text-purple-600 hover:underline"
+                    href="mailto:dimamingtrick@gmail.com?subject=File Analysis contact">dimamingtrick@gmail.com</a>
+    </div>
+</footer>
+
+<script src="./script.js"></script>
+</body>
+</html>
